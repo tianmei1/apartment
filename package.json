@@ -1,0 +1,32 @@
+{
+  "name": "rest_api_otr",
+  "version": "1.0.0",
+  "description": "Command line app",
+  "main": "commandlineapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tianmei1/REST_API_OTR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tianmei1/REST_API_OTR/issues"
+  },
+  "homepage": "https://github.com/tianmei1/REST_API_OTR#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "jQuery": "^1.7.4",
+    "jade": "^1.11.0",
+    "jquery": "^3.3.1",
+    "jsdom": "^12.2.0",
+    "request": "^2.87.0",
+    "supertest": "^3.1.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

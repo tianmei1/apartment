@@ -1,0 +1,454 @@
+//- doctype
+//- html
+//- 	head
+//- 		meta(charset="utf-8")
+//- 		meta(name="viewport" content="width=device-width, initial-scale=1")
+//- 		title BrentWood Apartment
+//- 		meta(name="description" content="")
+//- 		meta(name="author" content="")
+//- 		link(rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css")
+//- 		link(rel="stylesheet" href="/css/fonts/stylesheet.css")
+//- 		link(rel="stylesheet" href="/css/fonts/fonts.css")
+//- 		link(rel="stylesheet" href="/css/bootstrap/bootstrap.min.css")
+//- 		link(rel="stylesheet" href="/css/animat/animate.min.css")
+//- 		link(rel="stylesheet" href="/css/fancybox/jquery.fancybox.css")
+//- 		link(rel="stylesheet" href="/css/nivo-lightbox/nivo-lightbox.css")
+//- 		link(rel="stylesheet" href="/css/themes/default/default.css")
+//- 		link(rel="stylesheet" href="/css/owl-carousel/owl.carousel.css")
+//- 		link(rel="stylesheet" href="/css/owl-carousel/owl.theme.css")
+//- 		link(rel="stylesheet" href="/css/owl-carousel/owl.transitions.css")
+//- 		link(rel="stylesheet" href="/css/style.css")
+//- 		link(rel="stylesheet" href="/css/responsive.css")
+//- 		style(type='text/css').
+//- 			.floatright{
+//- 				text-align: right
+//- 				float:right;
+//- 			}
+//- 	body
+//- 		//- div(class='preloader')
+//- 			//- div(class='loaded')
+//- 		header(id="home" class="header")
+//- 			//- h1 BrentWood Apartment
+//- 			div(class="main_menu_bg navbar-fixed-top")
+//- 				div(class="container")
+//- 					.row
+//- 						.nave_menu
+//- 						.navbar.navbar-default
+//- 							.container-fluid
+//- 								//- .row
+//- 								//- 	.floatright
+//- 								//- 		li
+//- 								//- 			h4 630-860-0243
+//- 								//- 		li 
+//- 								//- 			button Apply Now
+//- 								.row
+
+//- 								.navbar-header
+//- 									button(type="button", class="navbar-toggle collapsed", data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+//- 										span(class="sr-only")
+//- 										span(class="icon-bar")
+//- 										span(class="icon-bar")
+//- 										span(class="icon-bar")
+//- 									a(class="navbar-brand" href="#")
+//- 										h4 BrentWood Apartment
+//- 										//- .logo
+//- 										//- 	img(src="/images/logo.png" alt="")
+//- 								div(class="collapse navbar-collapse", id="bs-example-navbar-collapse-1")
+//- 									ul(class="nav navbar-nav navbar-right")
+//- 										li
+//- 											a(href="#home")
+//- 												|Home
+//- 										li
+//- 											a(href="#call")
+//- 												|Tel: 630-860-0243
+//- 										li.active
+//- 											a(href="#home")
+//- 												|Apply Now
+//- 										li
+//- 											a(href="#floorplan")
+//- 												|Floor Plan
+//- 										li
+//- 											a(href="#home")
+//- 												|About
+//- 		section(id="banner" class="banner")
+//- 			.container
+//- 				.row
+//- 					div(class="main_banner_area text-center")
+//- 						div(class="col-md-12 col-sm-12")
+//- 							div(class="single_banner_text wow zoomIn" data-wow-duration="1s")
+//- 								h5 Welcome To
+//- 								h2 BrentWood Apartment
+//- 								div.separetor
+//- 						.scrolldown
+//- 							a(href="#abouts" class="scroll_btn")
+doctype
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title BrentWood Apartment|Bensenville|O'hare Airport
+		meta(name='description', content='')
+		meta(name='author', content='')
+		//
+			Favicons
+			==================================================
+		//- link(rel='shortcut icon', href='/img/favicon.ico', type='image/x-icon')
+		link(rel='apple-touch-icon', href='/img/apple-touch-icon.png')
+		link(rel='apple-touch-icon', sizes='72x72', href='/img/apple-touch-icon-72x72.png')
+		link(rel='apple-touch-icon', sizes='114x114', href='/img/apple-touch-icon-114x114.png')
+		// Bootstrap
+		link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+		link(rel='stylesheet', type='text/css', href='/css/bootstrap.min.css')
+		link(rel='stylesheet', type='text/css', href='/fonts/font-awesome/css/font-awesome.css')
+		//
+			Stylesheet
+			==================================================
+		link(rel='stylesheet', type='text/css', href='/css/style.css')
+		link(rel='stylesheet', type='text/css', href='/css/nivo-lightbox/nivo-lightbox.css')
+		link(rel='stylesheet', type='text/css', href='/css/nivo-lightbox/default.css')
+		link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900', rel='stylesheet')
+		// HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+		// WARNING: Respond.js doesn't work if you view the page via file://
+		//if lt IE 9
+			script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+			script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+	#myModal.modal.fade(role="dialog")
+		.modal-dialog
+				// Modal content
+				.modal-content
+					.modal-header
+							button.close(type="button", data-dismiss="modal") ×
+							|         
+							h4.modal-title Move-in Special 
+					|       
+					.modal-body
+							p Save on move-in cost!
+							.col-xs-12.col-md-6.text-center
+								img.img-responsive(src='/img/movein.jpg', alt='')
+							p Get up to $100 OFF when you move into select apartment homes by October 25rd!
+							a#applyMoveInBtn.page-scroll(href='#floorPlan')(type="button", data-dismiss="modal") Apply
+							a.rightFloatdiv.btn.btn-default(type="button", data-dismiss="modal") Close
+	body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
+		//
+			Navigation
+			==========================================
+		nav#menu.navbar.navbar-default.navbar-fixed-top
+			.container
+				// Brand and toggle get grouped for better mobile display
+				.navbar-header
+					button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand.page-scroll(href='#page-top') BrentWood Apartment
+				// Collect the nav links, forms, and other content for toggling
+				#bs-example-navbar-collapse-1.collapse.navbar-collapse
+					ul.nav.navbar-nav.navbar-right
+						li
+							a.page-scroll(href='#about') About US
+						li
+							a.page-scroll(href='#floorPlan') Floor Plan
+						li
+							a.page-scroll(href='#services') Location
+						li
+							a.page-scroll(href='#portfolio') Gallery
+						li
+							a.page-scroll(href='#team') Team
+						li
+							a.page-scroll(href='#contact') Contact
+				// /.navbar-collapse
+				// Header
+		header#header
+			.intro
+				.overlay
+					.container
+						.row
+							.intro-text
+								h1
+									strong Bensenville
+									span /
+									|  BrentWood Apartment
+								p Warmming home for you near O'hare International Airport.
+								a.btn.btn-custom.btn-lg.page-scroll(href='#contact') Take a tour
+		// About Section
+		#about
+			.container
+				.section-title.text-center.center
+					h2 Our Story
+					hr
+				.row
+					.col-xs-12.col-md-6.text-center
+						img.img-responsive(src='/img/about.jpg', alt='')
+					.col-xs-12.col-md-6
+						.about-text
+							h3 The Lexury Line A Buiding.
+							p
+								| Build in 2017, Start Learing in Dec, 2017, Brand New.
+							h3 One bed Room Design
+							p
+								| One bed Room with nice living room and kitchen
+		// Services Section
+		br
+		br
+		#floorPlan
+			.container
+				.section-title.text-center.center
+					h2 Floor Plan
+					hr
+				.row
+					.col-xs-12.col-md-6.text-center
+						img.img-responsive(src='/img/about.jpg', alt='')
+					.col-xs-12.col-md-6
+						.about-text
+							h3 One Bed Room
+							h4 $999- $1300
+							p	With blacony and free parking.
+							p	*start from 12 months flexiable lease. 
+							button.applyApartmentBtn Apply Now
+							a.takeATourBtn.page-scroll(href='#contact') | Take a Tour
+				.row
+					.col-xs-12.col-md-6.text-center
+						img.img-responsive(src='/img/about.jpg', alt='')
+					.col-xs-12.col-md-6
+						.about-text
+							h3 The Lexury One Bed Room
+							h4	$1200- $1400
+							p	With blacony, lexury indoor amenity and free parking.
+							p *start from 12 months flexiable lease. 
+							button.applyApartmentBtn Apply Now
+							a.takeATourBtn.page-scroll(href='#contact') Take a Tour
+		#services
+			.container
+				.col-md-10.col-md-offset-1.section-title.text-center
+					h2 Our Services
+					hr
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.
+				.row
+					.col-xs-12.col-sm-4.service
+						img.img-responsive(src='/img/residential-design.jpg', alt='Project Title')
+						h3 Residential Design
+						p
+							| Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.
+					.col-xs-12.col-sm-4.service
+						img.img-responsive(src='/img/office-design.jpg', alt='Project Title')
+						h3 Office Design
+						p
+							| Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.
+					.col-xs-12.col-sm-4.service
+						img.img-responsive(src='/img/commercial-design.jpg', alt='Project Title')
+						h3 Commercial Design
+						p
+							| Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.
+		// Portfolio Section
+		#portfolio
+			.container
+				.section-title.text-center.center
+					h2 Gallery
+					hr
+					p Nice location, Nice community.
+				.categories
+					ul.cat
+						li
+							ol.type
+								li
+									a.active(href='#', data-filter='*') BedRooms
+								li
+									a(href='#', data-filter='.residential') Kitchen
+								li
+									a(href='#', data-filter='.office') Leasing Office
+								li
+									a(href='#', data-filter='.commercial') Parking lots
+					.clearfix
+				.row
+					.portfolio-items
+						.col-sm-6.col-md-4.col-lg-4.residential
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/01-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/01-small.jpg', alt='Project Title')
+						.col-sm-6.col-md-4.col-lg-4.commercial
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/02-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/02-small.jpg', alt='Project Title')
+						.col-sm-6.col-md-4.col-lg-4.residential
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/03-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/03-small.jpg', alt='Project Title')
+						.col-sm-6.col-md-4.col-lg-4.residential
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/04-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/04-small.jpg', alt='Project Title')
+						.col-sm-6.col-md-4.col-lg-4.commercial
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/05-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/05-small.jpg', alt='Project Title')
+						.col-sm-6.col-md-4.col-lg-4.office
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/06-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/06-small.jpg', alt='Project Title')
+						.col-sm-6.col-md-4.col-lg-4.office
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/07-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/07-small.jpg', alt='Project Title')
+						.col-sm-6.col-md-4.col-lg-4.residential
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/08-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/08-small.jpg', alt='Project Title')
+						.col-sm-6.col-md-4.col-lg-4.commercial
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/09-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/09-small.jpg', alt='Project Title')
+						.col-sm-6.col-md-4.col-lg-4.office
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/10-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/10-small.jpg', alt='Project Title')
+						.col-sm-6.col-md-4.col-lg-4.office
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/11-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/11-small.jpg', alt='Project Title')
+						.col-sm-6.col-md-4.col-lg-4.residential
+							.portfolio-item
+								.hover-bg
+									a(href='/img/portfolio/12-large.jpg', title='Project Title', data-lightbox-gallery='gallery1')
+										.hover-text
+											h4 Project Name
+										img.img-responsive(src='/img/portfolio/12-small.jpg', alt='Project Title')
+		// Team Section
+		#team.text-center
+			.overlay
+				.container
+					.col-md-8.col-md-offset-2.section-title
+						h2 Meet the Team
+						hr
+						p Our best leasing and matainance team.
+					#row
+						.col-md-3.col-sm-6.team
+							.thumbnail
+								img.team-img(src='/img/team/01.jpg', alt='...')
+								.caption
+									h3 Peter
+									p Lease Manager
+						.col-md-3.col-sm-6.team
+							.thumbnail
+								img.img-circle.team-img(src='/img/team/02.jpg', alt='...')
+								.caption
+									h3 Jeff
+									p Lease Manager
+						.col-md-3.col-sm-6.team
+							.thumbnail
+								img.img-circle.team-img(src='/img/team/03.jpg', alt='...')
+								.caption
+									h3 Daniel
+									p Matainance 
+						.col-md-3.col-sm-6.team
+							.thumbnail
+								img.img-circle.team-img(src='/img/team/04.jpg', alt='...')
+								.caption
+									h3 Yola
+									p Lease special
+				// Contact Section
+				#contact
+					.container
+						.section-title.text-center.center
+							h2 Contact Us
+							hr
+							p Welcome to our warm community. The best location and plenty of opptinuty in the future!
+						.col-md-4
+							h3 Contact Info
+							.contact-item
+								span Address
+								p
+									| 630 George St, A, Office Room 
+									br
+									| Bensenville, IL 60106
+							.contact-item
+								span Email
+								p Brentwoodonthepond@comcast.net
+							.contact-item
+								span Tel
+								p  +1 630-860-0243
+						.col-md-8
+							h3 Leave us a message
+							form#contactForm(name='sentMessage', novalidate='')
+								.row
+									.col-md-6
+										.form-group
+											input#name.form-control(type='text', placeholder='Name', required='required')
+											p.help-block.text-danger
+									.col-md-6
+										.form-group
+											input#email.form-control(type='email', placeholder='Email', required='required')
+											p.help-block.text-danger
+								.form-group
+									textarea#message.form-control(name='message', rows='4', placeholder='Message', required='')
+									p.help-block.text-danger
+								#success
+								button.btn.btn-custom.btn-lg(type='submit') Send Message
+				.mainContainter
+					block content
+				#footer
+					.container.text-center
+						.social
+							ul
+								li
+									a(href='#')
+										i.fa.fa-facebook
+								li
+									a(href='#')
+										i.fa.fa-twitter
+								li
+									a(href='#')
+										i.fa.fa-google-plus
+								li
+									a(href='#')
+										i.fa.fa-pinterest
+								li
+									a(href='#')
+										i.fa.fa-youtube
+						div
+							h4 
+								|Tel: 630-860-0243 | Email: Brentwoodonthepond@comcast.net| Address: 630 George St, Bensenville,IL, 60106
+						div
+							p
+								| © 2018. All rights reserved.  
+				script(type='text/javascript', src='/js/jquery.1.11.1.js')
+				script(type='text/javascript', src='/js/bootstrap.js')
+				script(type='text/javascript', src='/js/SmoothScroll.js')
+				script(type='text/javascript', src='/js/nivo-lightbox.js')
+				script(type='text/javascript', src='/js/jquery.isotope.js')
+				script(type='text/javascript', src='/js/jqBootstrapValidation.js')
+				script(type='text/javascript', src='/js/contact_me.js')
+				script(type='text/javascript', src='/js/main.js')
